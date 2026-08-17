@@ -1,0 +1,58 @@
+# A hand-written scene, so you can test the ElevenLabs half (voice design +
+# TTS) WITHOUT wiring up the LLM first. Pass it via `render --scene`.
+# Every `speaker` matches an NPC id in axfori_campaign.yaml.
+
+title: "The Night Axfori Didn't Come Home"
+summary: >
+  Emberhollow carries on for a tenday while its unlikely hero lies fevered at
+  the temple — and not everyone wants her back.
+
+lines:
+  - speaker: narrator
+    text: >
+      Rain came to Emberhollow the night Axfori didn't. It found the forge cold
+      for the first time in thirty years.
+
+  - speaker: brakk-emberhand
+    direction: "(grumbling, not looking up)"
+    text: >
+      Fool girl. Ran onto a falling bridge to save a stranger's goat. A goat,
+      Sable.
+
+  - speaker: sable-marsh
+    direction: "(wiping a tankard, amused)"
+    text: >
+      The whole town's talking about that goat, Brakk. She's a legend by
+      breakfast and a debtor by supper.
+
+  - speaker: brakk-emberhand
+    direction: "(quieter)"
+    text: "...Is she awake yet? At the temple?"
+
+  - speaker: sable-marsh
+    text: >
+      Fever broke this morning. Asked for her hammer before she asked for
+      water. Sounds about right.
+
+  - speaker: narrator
+    text: >
+      In the corner, a young man in clean leathers listened, and smiled the way
+      a knife smiles.
+
+  - speaker: verrik-cole
+    direction: "(warm, rising)"
+    text: >
+      A hero laid up for a tenday. That's a great many contracts going
+      unclaimed. Someone ought to... help.
+
+  - speaker: sable-marsh
+    direction: "(flat)"
+    text: "Someone ought to finish their ale and mind their business, Verrik."
+
+  - speaker: verrik-cole
+    direction: "(a smile you can hear)"
+    text: "Only looking out for the town, Sable. Same as our absent friend."
+
+  - speaker: brakk-emberhand
+    direction: "(low, to himself)"
+    text: "Hurry back, girl. Before the wolves learn to smile."

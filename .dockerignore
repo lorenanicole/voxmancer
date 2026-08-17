@@ -1,0 +1,40 @@
+.git
+.github
+.gitignore
+.env
+.voxmancer/
+
+# Presentation files
+*.qmd
+presentation.html
+
+# Documentation
+docs/
+README.md
+*.md
+
+# Testing
+tests/
+.pytest_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+out/
+dist/
+build/
+*.mp3

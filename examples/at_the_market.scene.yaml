@@ -1,0 +1,30 @@
+title: A Bargain in the Bustle
+lines:
+- speaker: narrator
+  text: Amidst the clamor of Axfori's Market Day, a shadowy figure stands apart.
+  direction: null
+- speaker: narrator
+  text: From the heart of the crowd, the Mysterious Merchant eyes his quarry.
+  direction: null
+- speaker: merchant
+  text: Ah, the famed Axfori, I have long awaited our meeting.
+  direction: to Axfori
+- speaker: axfori
+  text: Who are you and what do you want with me?
+  direction: to merchant
+- speaker: merchant
+  text: I bear items of great importance, valuable to one such as yourself.
+  direction: to axfori
+- speaker: axfori
+  text: I don't make deals with strangers. Prove your worth.
+  direction: to merchant
+- speaker: merchant
+  text: Very well, take this trinket. It will guide you to a hidden stash.
+  direction: to axfori
+- speaker: axfori
+  text: Lead the way, merchant. I'll see if your treasures are worth the risk.
+  direction: to merchant
+- speaker: narrator
+  text: As twilight falls, Axfori and the Mysterious Merchant vanish into the gathering
+    shadows.
+  direction: null

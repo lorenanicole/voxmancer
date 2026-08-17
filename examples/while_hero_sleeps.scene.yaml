@@ -1,0 +1,56 @@
+title: "While the Hero Sleeps"
+summary: >
+  The merchant's shipment is three days late. In the Quiet Hearth tavern, Brakk
+  drowns his worry in ale while Sable works the crowd, gathering rumors. Together
+  they piece together a troubling picture—someone in Emberhollow is making moves
+  that only matter when there's no one strong enough to stop them.
+
+lines:
+  - speaker: sable-marsh
+    text: >
+      Three days passed since Axfori fell. The fever broke, but the hero still
+      sleeps at the temple, and in Emberhollow, that absence is felt like a held
+      breath. At the Quiet Hearth tavern, Brakk Emberhand stares into his ale as
+      if it holds answers.
+
+  - speaker: brakk-emberhand
+    direction: "(into his ale, gruff)"
+    text: >
+      That shipment from Waterdeep should've been here by now. Third day late.
+      Merchant's starting to panic. Can't blame him.
+
+  - speaker: sable-marsh
+    direction: "(polishing a glass, casual)"
+    text: >
+      You hear everything in a tavern, Brakk. And what I'm hearing is that
+      Verrik Cole's been very busy while Axfori's laid up at the temple.
+
+  - speaker: brakk-emberhand
+    direction: "(looking up, dangerous)"
+    text: >
+      What kind of busy? The kind we need to worry about?
+
+  - speaker: sable-marsh
+    direction: "(leaning on the bar, knowing smile)"
+    text: >
+      The kind where a desperate merchant suddenly finds a solution to his
+      problems. Cole's good at finding solutions. They usually come with
+      complications.
+
+  - speaker: brakk-emberhand
+    direction: "(heavy sigh)"
+    text: >
+      Damn it. Is Axfori awake yet? We might need her before this gets worse.
+
+  - speaker: sable-marsh
+    direction: "(shrugging)"
+    text: >
+      Temple's keeping her another day at least. The fever broke, but she's weak
+      as a kitten. Why? What are you thinking?
+
+  - speaker: brakk-emberhand
+    direction: "(quietly, dark)"
+    text: >
+      I'm thinking the town's changing while she sleeps. And not in any way that
+      a dwarf blacksmith can fix with a hammer. This kind of trouble needs a
+      hero. We just need her to wake up in time.

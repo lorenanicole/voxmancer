@@ -1,0 +1,57 @@
+# Sample input for Voxmancer. Replace the flavor with your real campaign —
+# the NPC ids, personalities, and especially the `voice_prompt` fields are
+# what make each character sound distinct.
+
+title: "The Emberhollow Chronicles"
+setting: >
+  A rain-worn frontier town at the edge of the Ashen Reach, where the old gods
+  are half-remembered and the forge-fires never fully go out.
+lead_character: "Axfori"
+absence_reason: >
+  Laid up at the Temple of the Quiet Flame with wound-fever after the bridge
+  collapse — out for a tenday.
+interlude_premise: >
+  While Axfori recovers, the town carries on without her. Rumors of her
+  heroism (and her debts) spread. Show three small beats: the blacksmith
+  worrying, the tavern gossip, and a rival who sees an opening.
+
+npcs:
+  - id: narrator
+    name: "Narrator"
+    species: "storyteller"
+    role: "narration"
+    personality: "measured, atmospheric"
+    voice_prompt: >
+      A calm, cinematic storyteller. Unhurried, low, warm — the voice of
+      firelight and rain.
+
+  - id: brakk-emberhand
+    name: "Brakk Emberhand"
+    species: "dwarf"
+    age: "old"
+    role: "blacksmith, Axfori's gruff mentor"
+    personality: "gruff, fiercely loyal, hides worry behind complaints"
+    accent: "rough highland"
+    voice_prompt: >
+      An old dwarven blacksmith. Low, gravelly, unhurried, warm underneath the
+      grumbling. Clipped sentences.
+
+  - id: sable-marsh
+    name: "Sable Marsh"
+    species: "half-elf"
+    age: "middle-aged"
+    role: "tavern keeper and rumor-broker"
+    personality: "quick, wry, knows everyone's business"
+    voice_prompt: >
+      A middle-aged half-elf tavern keeper. Bright, quick, faintly amused.
+      Mid-range and musical.
+
+  - id: verrik-cole
+    name: "Verrik Cole"
+    species: "human"
+    age: "young"
+    role: "a rival sellsword eyeing Axfori's contracts"
+    personality: "smooth, ambitious, dangerous when polite"
+    voice_prompt: >
+      A young human sellsword. Smooth, controlled, a smile you can hear. A cool
+      baritone that never quite warms.

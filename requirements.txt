@@ -1,0 +1,11 @@
+pydantic>=2.6
+pyyaml>=6.0
+httpx>=0.27
+python-dotenv>=1.0
+pydub>=0.25.1        # audio concat — needs ffmpeg on PATH
+
+# Optional, depending on which stages you wire up:
+# elevenlabs>=1.0    # official SDK (simpler than raw httpx)
+# anthropic>=0.34    # or your LLM provider of choice, for scene_writer
+# openai-whisper      # or another STT model, for the consistency eval
+# resemblyzer         # speaker embeddings, for cross-session consistency

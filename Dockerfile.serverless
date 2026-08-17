@@ -1,0 +1,37 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    ffmpeg \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Pin to a specific commit for reproducible builds
+ARG VOXMANCER_SHA=main
+RUN git clone https://github.com/lorenanicole/voxmancer.git . && \
+    git checkout ${VOXMANCER_SHA}
+
+# Install Poetry
+RUN pip install --upgrade pip && \
+    pip install poetry
+
+# Configure Poetry and install Python dependencies (no extras for lightweight image)
+# Install directly to system Python, skip virtualenv, skip dev deps for smaller image
+RUN poetry config virtualenvs.create false && \
+    poetry install --only main
+
+# Install RunPod serverless worker framework
+RUN pip install runpod
+
+# Pre-populate voice cache to avoid free-plan voice design limits
+RUN mkdir -p /root/.voxmancer && \
+    echo '{"narrator": {"voice_id": "Q5zbZ6T7eyWJVLdK6afB", "prompt": "Professional storyteller"}, "axfori": {"voice_id": "qgkR3bMrLY4ubF6WL7sL", "prompt": "Confident warrior"}, "merchant": {"voice_id": "gRZJvE4lKVC8U4YyHa9q", "prompt": "Enigmatic merchant"}}' > /root/.voxmancer/voices.json
+
+# Verify handler imports correctly
+RUN python -c "from voxmancer.serverless.runpod_handler import handler; print('✓ Handler loaded')"
+
+# Start the RunPod serverless handler
+CMD ["python", "-u", "-c", "import runpod; from voxmancer.serverless.runpod_handler import handler; runpod.serverless.start({'handler': handler})"]

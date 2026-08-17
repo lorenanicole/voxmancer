@@ -1,0 +1,35 @@
+absence_reason: Axfori is present in the scene
+interlude_premise: Axfori negotiates with a mysterious merchant over rare supplies
+lead_character: Axfori
+npcs:
+- id: narrator
+  name: Narrator
+  personality: measured, atmospheric
+  role: narration
+  species: storyteller
+  voice_prompt: 'English. Male, 40s. Premium quality. Professional storyteller voice.
+    Warm, engaging, with natural pacing and dramatic timing. Clear enunciation perfect
+    for narration. Think: podcast host meets fantasy audiobook narrator. Authoritative
+    yet approachable, capable of building tension and wonder.'
+- id: axfori
+  name: Axfori
+  personality: brave, determined, pragmatic
+  role: protagonist
+  species: human
+  voice_prompt: "English. Female, 30s. Premium quality. Confident warrior voice with\
+    \ edge. Strong, decisive delivery with underlying determination. Slightly husky\
+    \ tone, battle-hardened but not cold. Sharp, commanding presence\u2014someone\
+    \ you don't want to cross but can trust. Quick-paced speech with natural confidence\
+    \ and presence."
+- id: merchant
+  name: Mysterious Merchant
+  personality: mysterious, clever, secretive
+  role: merchant
+  species: human
+  voice_prompt: English. Male, 50s. Premium quality. Enigmatic merchant character
+    voice. Silky smooth yet slightly mysterious delivery with knowing undertones.
+    Worldly, intelligent, with calculated pauses for effect. Faint exotic accent hint.
+    Charismatic without being trustworthy. Someone who has seen everything and plays
+    every angle.
+setting: A bustling market square
+title: Axfori's Market Day

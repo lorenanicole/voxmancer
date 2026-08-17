@@ -1,0 +1,7 @@
+.env
+.voxmancer/
+out/
+__pycache__/
+*.pyc
+*.mp3
+.venv/
